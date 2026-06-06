@@ -2,9 +2,11 @@
   "pack": {
     "description": "速通挑戰計時器",
     "min_format": [
-      101,
-      1
+      48,
+      0
     ],
-    "max_format": 101
+    "max_format": 48,
+    "supported_formats": [48, 81],
+    "pack_format": 48
   }
 }
