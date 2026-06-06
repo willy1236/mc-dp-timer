@@ -13,7 +13,7 @@ execute if score #timer countdown matches 1 run playsound minecraft:block.note_b
 # 顯示 開始
 execute if score #timer countdown matches 0 run title @a title {"text":"開始！","color":"green","bold":true}
 execute if score #timer countdown matches 0 run playsound minecraft:entity.player.levelup master @a
-
+execute if score #timer countdown matches 0 run function timer:count_go
 
 # --- 遞迴計時區 ---
 
@@ -22,4 +22,3 @@ scoreboard players remove #timer countdown 1
 
 # 如果分數還大於等於 0，則安排 1 秒後再次執行「自己」
 execute if score #timer countdown matches 0.. run schedule function timer:countdown 20t
-execute if score #timer countdown matches 0 run schedule function timer:count_go 20t

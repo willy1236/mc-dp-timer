@@ -6,5 +6,4 @@ scoreboard players set @a min 0
 scoreboard players set @a hr 0
 scoreboard players reset @a death
 clear @a[gamemode=survival]
-title @a title "開始！"
 schedule function timer:add_time 1s replace
